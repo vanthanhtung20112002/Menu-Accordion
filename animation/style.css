@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.blue {
+  background-color: blue;
+  transition-property: background-color, height, transform;
+  transition-duration: 1s, 3s, 4s;
+}
+
+.blue:hover {
+  background-image: linear-gradient(0, #2ecc71, #3498db);
+  height: 130px;
+  transform: rotate(360deg);
+}
+
+.red {
+  background-color: red;
+}
