@@ -2,6 +2,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .box {
   width: 100px;
@@ -21,5 +23,30 @@
 }
 
 .red {
+  background-color: red;
+}
+.animation {
+  list-style: none;
+}
+
+.sub {
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+}
+
+li::after {
+  background-color: black;
+  content: "";
+  position: absolute;
+  left: 8px;
+  bottom: 5px;
+  width: 0%;
+  height: 5px;
+  border-radius: 30px;
+  transition: width 1s, background-color 0.5s;
+}
+.sub:hover::after {
+  width: 80%;
   background-color: red;
 }
